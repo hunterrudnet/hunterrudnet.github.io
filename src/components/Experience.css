@@ -1,0 +1,40 @@
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .experience-logo {
+    position: relative;
+    margin: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .experience-logo img {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .experience-logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .experience-title {
+    display: none;
+  }
+  
+  .experience-logo:hover .experience-title {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+  }
+  
