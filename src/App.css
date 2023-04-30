@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Poppins", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #f6f9fc;
   margin: 0;
   background: linear-gradient(to bottom, #9cd6ff, #f1a8e8, #d7d7d7);
@@ -13,6 +16,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 100;
+  border-radius: 0 0 8px 8px;
 }
 
 .nav-links {
@@ -30,15 +34,17 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: #ffffff;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .nav-links .active {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .section-title {
   color: #0a2540;
+  font-weight: 700;
 }
 
 .section-content {
@@ -71,4 +77,40 @@ nav {
 .section-content.visible {
   opacity: 1;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Additional styles for rounded and bold feel */
+button, input, select, textarea {
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.button, .btn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #546e7a;
+  color: white;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover, .btn:hover {
+  background-color: #3c4e95;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
