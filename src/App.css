@@ -69,6 +69,16 @@ nav {
   }
 }
 
+@media (max-width: 600px) {
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+}
+
+
 .section-content {
   opacity: 0;
   animation: fadeOut 0.5s ease-in-out;
