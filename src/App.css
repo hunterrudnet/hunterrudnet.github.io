@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #f6f9fc;
+  margin: 0;
+  background: linear-gradient(to bottom, #9cd6ff, #f1a8e8, #d7d7d7);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background-color: #546e7a;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links li {
+  margin-left: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-links .active {
+  font-weight: 600;
+}
+
+.section-title {
+  color: #0a2540;
+}
+
+.section-content {
+  color: #3d4852;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.section-content {
+  opacity: 0;
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.section-content.visible {
+  opacity: 1;
+  animation: fadeIn 0.5s ease-in-out;
 }
