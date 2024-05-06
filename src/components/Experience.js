@@ -8,7 +8,7 @@ const experiences = [
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Datadog_logo.svg/1200px-Datadog_logo.svg.png",
     officeLocation: "Boston",
     role: "Software Engineer Intern",
-    description: "TBD!",
+    description: "Live Processes & Containers",
     url: "https://www.datadoghq.com/"
   },
   {

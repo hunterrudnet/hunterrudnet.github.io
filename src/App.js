@@ -12,7 +12,7 @@ import "./App.css";
 
 const sections = [
   { id: "about", label: "About" },
-  { id: "experience", label: "Experience" },
+  { id: "experience", label: "Internship Experience" },
   { id: "education", label: "Education" },
   { id: "skills", label: "Skills" },
   { id: "contact", label: "Contact" },
